@@ -1,15 +1,15 @@
-function countWord(string)
+function countLetter(input_string)
 {
-    let co = {};
-    let ar= string.split('');
-        ar.reduce(function(prev,cur)
+    let countStore = {};
+    let countArray= input_string.split("");
+        countArray.reduce(function(prev,curr)
             {
-                (co[cur]) ? co[cur]+=1 : co[cur]=1;
-                return co;
+                (countStore[curr]) ? countStore[curr]+=1 : countStore[curr]=1;
+                return countStore;
              },0     // 0 or any other number lets say num can be  passed for prev = num, to start current element from index 0 
-                      // since we r not using prev
+                     // since we r not using prev
         );         
- console.log("Count of each letter in string is:\n", co);
+ console.log("Count of each letter in inputted_string is:\n", countStore);
 }
-var str = "nikhilmukati";
-countWord(str);
+let input = "nikhilmukati";
+countLetter(input);

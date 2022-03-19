@@ -4,8 +4,10 @@ function secondLargest(arr)
   arr.forEach(findNum);
   function findNum(num)
   {
-    if(num>first) { second=first; first=num;}
-    else {if(num>second && num<first) second = num;}
+    if(num>first) { 
+      second=first; 
+      first=num;  }
+    else if(num>second && num<first) second = num;
   }
   console.log("second largest element is: ",second);
 }

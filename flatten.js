@@ -20,7 +20,3 @@ const obj = {         // unFlattened object
   }
   const ans = flattenObject(obj);
   console.log("Flattened Object is: \n",ans);
-  
-  
-
-  
