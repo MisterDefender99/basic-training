@@ -29,7 +29,8 @@ input[type=text], input[type=password] {
     margin: 8px 0;
     border: 3px solid black;
     cursor: pointer;
-    width: 100%;
+    width: 20%;
+    
     opacity: 0.9;
   }
   
@@ -51,3 +52,5 @@ input[type=text], input[type=password] {
     margin-bottom: 25px;
     accent-color: purple;
   }  
+
+  

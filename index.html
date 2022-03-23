@@ -6,27 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="index.css">
+    <script src="signupScript.js"></script>
 </head>
 <body>
   <div id="full">
-    <form action="action_page.js" method="post">
+    <form action="#">
       <div class="imgcontainer">
         <img src="login.jpg" alt="Avatar" class="avatar">
       </div>
       <div class="container">
         <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input id="usrname" type="text" placeholder="Enter Username" name="uname" required><br>
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-        <button type="submit">Login</button><br><br>
-        <label>
-          <input type="checkbox" name="remember"> Remember me
-        </label>
+        <input id="pword" type="password" placeholder="Enter Password" name="psw" required><br>
+        <button id="btn"  type="submit" onclick="verifyLogin()" >Login</button><br>
       </div>
     </form>
     <p id = or><b>OR</b></p>
       <a href="signup.html">   
-        <button type="submit">Sign-Up</button><br><br>
+        <button id ="sp" type="submit">Sign-Up</button><br>
        </a>
     </div>
   </div>
