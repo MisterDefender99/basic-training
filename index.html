@@ -9,6 +9,12 @@
     <script src="signupScript.js"></script>
 </head>
 <body>
+  <div>
+    <ul id="listuser">
+      <h3> All users here: </h3>
+    </ul> 
+  </div>
+  <table id="table"></table>
   <div id="full">
     <form action="#">
       <div class="imgcontainer">
@@ -16,15 +22,15 @@
       </div>
       <div class="container">
         <label for="uname"><b>Username</b></label>
-        <input id="usrname" type="text" placeholder="Enter Username" name="uname" required><br>
+        <input id="userName" type="text" placeholder="Enter Username" name="uname" required><br>
         <label for="psw"><b>Password</b></label>
-        <input id="pword" type="password" placeholder="Enter Password" name="psw" required><br>
-        <button id="btn"  type="submit" onclick="verifyLogin()" >Login</button><br>
+        <input id="password" type="password" placeholder="Enter Password" name="psw" required><br>
+        <button id="btn" onclick="return verifyLogin()" >Login</button><br>
       </div>
     </form>
     <p id = or><b>OR</b></p>
       <a href="signup.html">   
-        <button id ="sp" type="submit">Sign-Up</button><br>
+        <button id ="sp" >Sign-Up</button><br>
        </a>
     </div>
   </div>

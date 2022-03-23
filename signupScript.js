@@ -48,6 +48,8 @@
     
 // }
 
+
+
 function saveData() {
     const userName = document.getElementById("user-name").value;
     const email = document.getElementById("email").value;
@@ -55,17 +57,36 @@ function saveData() {
     const lastName = document.getElementById("last-name").value;
     const gender = document.getElementById("gender").value;
     const password = document.getElementById("password").value;
-    localStorage.setItem(userName, JSON.stringify({ email, userName, firstName, lastName, gender, password }));
+    localStorage.setItem(userName, JSON.stringify({
+      email: email, userName: userName, firstName: firstName, lastName: lastName, gender: gender, password: password
+    }));
     window.location.href = "index.html";
   }
   function verifyLogin() {
     const userName = document.getElementById("userName").value;
     const password = document.getElementById("password").value;
-    user = JSON.parse(localStorage.getItem(userName));
+    var user = JSON.parse(localStorage.getItem(userName));
     if (password == user.password) {
-      alert("Login successfully");
-      window.location.href = "firstPage.html";
-    } else {
+      //alert("Login successfully");
+      console.log(user);
+
+      window.location.href  = './firstPage.html';
+      return false;
+
+      // for(let i in user)
+      //   {
+      //     var li = document.createElement("li");
+      //     // var tb = document.createElement("tr");
+      //     // tb.className="row";
+      //     // var data = document.createElement("th");
+      //     // data.innerHTML=i;
+      //     // document.getElementsByClassName("row").appendChild(data);
+      //     // li.innerHTML=  ;
+      //     document.getElementById("listuser").appendChild(li);
+      //   }
+      // window.location.href = "firstPage.html";
+    } 
+    else {
       alert("Invalid Credentials Login Failed");
     }
   }
