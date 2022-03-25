@@ -1,25 +1,8 @@
 
   body{
-    background-color: rgb(224, 224, 224);}
-
-#showdata {background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA  51%, #1D2B64  100%)}
-#showdata {
-   margin: 50px;
-   position: relative;
-   padding: 15px 45px;
-   left: 40%;
-   right: 60;
-   text-align: center;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: rgb(255, 255, 255);            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 15px;
-   display: block;
-   font-weight: bold;
-   top: 50%;
-   border: solid black 2px;
- }
+    background: rgb(7,157,52);
+    background: linear-gradient(90deg, rgba(7,157,52,1) 0%, rgba(143,175,29,1) 52%, rgba(48,189,123,1) 73%);
+  }
 
  #showdata:hover {
    background-position: right center; /* change the direction of the change here */
@@ -31,9 +14,9 @@
      text-align: center;
      font-weight: bolder;
      font-size: 40px;
-     background: -webkit-linear-gradient(rgb(212, 224, 228), rgb(18, 95, 158));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      margin-top: 55px;
+      font-style: italic;
+      color: #eee;
  }
  .userList{
      text-align: center;
@@ -64,4 +47,46 @@
 
 .footer-text{
    color: #eee;  
+}
+
+.table-header{
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+}
+table,  td,tr {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 110px;
+  margin-bottom: 160px;
+  
+
+}
+#table{
+  width: 75%;
+  
+}
+td{
+  padding: 10px;
+  font-size: medium;
+  font-weight: 500;
+  background-color: rgba(238, 219, 247, 0);
+  color: #eee;
+}
+.table-header{
+  color: rgb(0, 0, 0);
+  padding: 15px;
+}
+th{
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(60,253,45,0.7430322470785189) 100%);
+  border: 2px solid black;
+  text-align: center;
+}
+.table-data{
+  left: 14%;
 }
