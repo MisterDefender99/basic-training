@@ -5,7 +5,7 @@ function showData() {
     let row = document.createElement("tr");
     row.className = "row-data";
     let rowData = document.createElement("td");
-    rowData.innerHTML = element["user-name"];
+    rowData.innerHTML = element["user-name"];     
     console.log(element["user-name"]);
     row.appendChild(rowData);
     rowData = document.createElement("td");
