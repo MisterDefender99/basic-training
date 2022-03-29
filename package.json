@@ -1,0 +1,14 @@
+{
+  "name": "basic_training",
+  "version": "1.0.0",
+  "description": "cli input prompt",
+  "main": "gameOfdice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
