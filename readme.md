@@ -1,5 +1,5 @@
 **The "Game of Dice" is a game where two players roll 6 faced dice in a round-robin fashion. Each time a player rolls the dice their points increase by the number (1 to 6) achieved by the roll. The first player to accumulate M points wins the game.**
-**Rules of the game**
+**Rules of the Game**
 * The order in which the users roll the dice is decided randomly at the start of the game.
 * If a player rolls the value "6" then they immediately get another chance to roll again and move ahead in the game.
 ** Implementation Details**
